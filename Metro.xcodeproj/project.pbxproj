@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		E401E1821C968F9C00A6AA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401E1811C968F9C00A6AA81 /* AppDelegate.swift */; };
 		E401E1841C968F9C00A6AA81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401E1831C968F9C00A6AA81 /* ViewController.swift */; };
-		E401E1871C968F9C00A6AA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E401E1851C968F9C00A6AA81 /* Main.storyboard */; };
 		E401E18A1C968F9C00A6AA81 /* Metro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E401E1881C968F9C00A6AA81 /* Metro.xcdatamodeld */; };
 		E401E18C1C968F9C00A6AA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E401E18B1C968F9C00A6AA81 /* Assets.xcassets */; };
 		E401E18F1C968F9C00A6AA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E401E18D1C968F9C00A6AA81 /* LaunchScreen.storyboard */; };
 		E401E19A1C968F9C00A6AA81 /* MetroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401E1991C968F9C00A6AA81 /* MetroTests.swift */; };
+		E401E1A51C96902200A6AA81 /* MetroRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401E1A41C96902200A6AA81 /* MetroRoute.swift */; };
+		E401E1A71C96942E00A6AA81 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401E1A61C96942E00A6AA81 /* DetailViewController.swift */; };
+		E401E1A81C96942E00A6AA81 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401E1A61C96942E00A6AA81 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,6 @@
 		E401E17E1C968F9C00A6AA81 /* Metro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E401E1811C968F9C00A6AA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E401E1831C968F9C00A6AA81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E401E1861C968F9C00A6AA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E401E1891C968F9C00A6AA81 /* Metro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Metro.xcdatamodel; sourceTree = "<group>"; };
 		E401E18B1C968F9C00A6AA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E401E18E1C968F9C00A6AA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +39,8 @@
 		E401E1951C968F9C00A6AA81 /* MetroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E401E1991C968F9C00A6AA81 /* MetroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroTests.swift; sourceTree = "<group>"; };
 		E401E19B1C968F9C00A6AA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E401E1A41C96902200A6AA81 /* MetroRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroRoute.swift; sourceTree = "<group>"; };
+		E401E1A61C96942E00A6AA81 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +84,8 @@
 			children = (
 				E401E1811C968F9C00A6AA81 /* AppDelegate.swift */,
 				E401E1831C968F9C00A6AA81 /* ViewController.swift */,
-				E401E1851C968F9C00A6AA81 /* Main.storyboard */,
+				E401E1A61C96942E00A6AA81 /* DetailViewController.swift */,
+				E401E1A41C96902200A6AA81 /* MetroRoute.swift */,
 				E401E18B1C968F9C00A6AA81 /* Assets.xcassets */,
 				E401E18D1C968F9C00A6AA81 /* LaunchScreen.storyboard */,
 				E401E1901C968F9C00A6AA81 /* Info.plist */,
@@ -182,7 +186,6 @@
 			files = (
 				E401E18F1C968F9C00A6AA81 /* LaunchScreen.storyboard in Resources */,
 				E401E18C1C968F9C00A6AA81 /* Assets.xcassets in Resources */,
-				E401E1871C968F9C00A6AA81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E401E1841C968F9C00A6AA81 /* ViewController.swift in Sources */,
+				E401E1A51C96902200A6AA81 /* MetroRoute.swift in Sources */,
+				E401E1A71C96942E00A6AA81 /* DetailViewController.swift in Sources */,
 				E401E18A1C968F9C00A6AA81 /* Metro.xcdatamodeld in Sources */,
 				E401E1821C968F9C00A6AA81 /* AppDelegate.swift in Sources */,
 			);
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E401E19A1C968F9C00A6AA81 /* MetroTests.swift in Sources */,
+				E401E1A81C96942E00A6AA81 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +231,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E401E1851C968F9C00A6AA81 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E401E1861C968F9C00A6AA81 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E401E18D1C968F9C00A6AA81 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
